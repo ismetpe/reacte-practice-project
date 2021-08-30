@@ -18,6 +18,7 @@ const Form = props => {
   };
   const UserInputChangeHandlerAge = event => {
     if (event.target.value.trim().length > 0) {
+      console.log(event.target.value)//little test for github
       setIsValid(true);
     }
     setEnteredAge(event.target.value);
